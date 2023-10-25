@@ -1,0 +1,31 @@
+﻿<Window x:Class="PolynomialCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Калькулятор Многочленів" Height="450" Width="600">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Введіть коефіцієнти для Многочлена 1:" Margin="5"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="textBoxA1" Width="50" Margin="5"/>
+                <TextBlock Text="x^3 + " Margin="5"/>
+                <TextBox x:Name="textBoxB1" Width="50" Margin="5"/>
+                <TextBlock Text="x^2 + " Margin="5"/>
+                <TextBox x:Name="textBoxC1" Width="50" Margin="5"/>
+                <TextBlock Text="x + " Margin="5"/>
+                <TextBox x:Name="textBoxD1" Width="50" Margin="5"/>
+            </StackPanel>
+            <TextBlock Text="Введіть коефіцієнти для Многочлена 2:" Margin="5"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="textBoxA2" Width="50" Margin="5"/>
+                <TextBlock Text="x^3 + " Margin="5"/>
+                <TextBox x:Name="textBoxB2" Width="50" Margin="5"/>
+                <TextBlock Text="x^2 + " Margin="5"/>
+                <TextBox x:Name="textBoxC2" Width="50" Margin="5"/>
+                <TextBlock Text="x + " Margin="5"/>
+                <TextBox x:Name="textBoxD2" Width="50" Margin="5"/>
+            </StackPanel>
+            <Button Content="Обчислити" Click="CalculateButton_Click" Margin="5"/>
+            <TextBlock x:Name="resultTextBlock" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
